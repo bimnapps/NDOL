@@ -15,6 +15,9 @@
   h3 { font-size:1rem; margin:1.5rem 0 .35rem; }
   .sub { color:var(--muted); margin:0 0 2rem; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.25rem; margin:1.25rem 0; }
+  table { border-collapse:collapse; width:100%; margin:1rem 0; font-size:.95rem; }
+  th, td { text-align:left; padding:.5rem .6rem; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
   ul { padding-left:1.15rem; } li { margin:.35rem 0; }
   a { color:var(--accent); }
   footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
@@ -24,13 +27,71 @@
 <main>
 
 <h1>NDOL — Support</h1>
-<p class="sub">Help for the NDOL note app for iPhone and iPad</p>
+<p class="sub">Help for the NDOL note app for iPhone and iPad · Last updated 14 September 2026</p>
 
 <div class="card">
   <strong>Get in touch:</strong>
   <a href="mailto:bimnapps@icloud.com">bimnapps@icloud.com</a><br>
   <span style="color:var(--muted)">Please say which device and iOS version you're on — it usually makes the answer twice as fast.</span>
 </div>
+
+<h2>Pricing and Premium</h2>
+
+<h3>How much does NDOL cost?</h3>
+<p>NDOL is <strong>free to download</strong>, and the whole app works without
+paying. There is one optional in-app purchase, <strong>NDOL Premium</strong>, at
+<strong>US$4.99</strong>. It is a <strong>one-time purchase, not a
+subscription</strong> — nothing renews, nothing expires, and there is nothing to
+cancel. Prices in other countries are set by Apple for your region and may
+differ; the price shown in the app is always the price you pay. There is no
+advertising in NDOL.</p>
+
+<h3>What do I get for free, and what does Premium add?</h3>
+<table>
+  <tr><th>&nbsp;</th><th>Free</th><th>Premium</th></tr>
+  <tr><td>Notebooks</td><td>3 active</td><td>Unlimited</td></tr>
+  <tr><td>Pages per notebook</td><td>50</td><td>Unlimited</td></tr>
+  <tr><td>Timeline history</td><td>Last 30 days shown (pinned notes always shown)</td><td>Everything, however old</td></tr>
+  <tr><td>Armed alarms</td><td>5 at a time, up to 7 days ahead</td><td>Unlimited, any date</td></tr>
+  <tr><td>Pending reminders</td><td>10 at a time</td><td>Unlimited</td></tr>
+  <tr><td>Unfinished tasks</td><td>10 at a time</td><td>Unlimited</td></tr>
+  <tr><td>Accent colours</td><td>2</td><td>All of them, plus colours for every calendar marker</td></tr>
+  <tr><td>PDF export</td><td>Export any notebook as PDF</td><td>Also page ranges, per-page backgrounds and higher-resolution render</td></tr>
+  <tr><td>Voice capture, handwriting, widgets, Control Center, backups, full text export</td><td>Included</td><td>Included</td></tr>
+</table>
+<p><strong>The free limits hide, they never delete.</strong> Notes outside the
+30-day window stay on your device, stay in search, stay in your exports, and
+come straight back if you unlock Premium. Nothing you write is ever held hostage
+by whether you have paid.</p>
+
+<h3>I already bought Premium — how do I get it on a new device?</h3>
+<p>Sign in to the same Apple Account, then open NDOL → <strong>Settings →
+Restore Purchases</strong>. Premium is tied to your Apple Account, so you never
+pay twice. Restoring asks Apple for your App Store password; that is normal and
+it is why the button is there rather than running automatically.</p>
+
+<h3>I paid and nothing unlocked.</h3>
+<p>Try <strong>Settings → Restore Purchases</strong> first — that fixes almost
+every case, including a purchase that needed a parent's approval through Ask to
+Buy, which arrives after you tap Buy rather than straight away. If it still
+hasn't unlocked, check you're signed in to the Apple Account you bought with,
+then email <a href="mailto:bimnapps@icloud.com">bimnapps@icloud.com</a> and say
+roughly when you bought it.</p>
+
+<h3>How do I get a refund?</h3>
+<p>Refunds for anything bought on the App Store are handled by Apple, not by the
+developer. Request one at
+<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. If Apple
+refunds the purchase, Premium features switch off again — but your notes,
+notebooks and pages are all still there.</p>
+
+<h3>Can my family share Premium?</h3>
+<p>Not currently — Premium is not set up for Family Sharing, so each Apple
+Account buys it separately.</p>
+
+<h3>How do I cancel?</h3>
+<p>There is nothing to cancel. Premium is a one-time purchase, so you are never
+billed again.</p>
 
 <h2>Common questions</h2>
 
@@ -51,7 +112,8 @@ export anything you can't afford to lose.</p>
 <p>Deleting the app deletes everything it stored. There is no cloud copy and no
 way to recover it — not by us either, because we never had it. If you had
 iCloud Backup on before deleting, restoring the device from that backup may
-bring it back.</p>
+bring it back. A Premium purchase is not lost this way: reinstall and use
+Settings → Restore Purchases.</p>
 
 <h3>Dictation says it isn't available.</h3>
 <p>NDOL only transcribes on the device and will not send your voice to a server,
@@ -71,12 +133,18 @@ one to the Lock Screen, long-press the Lock Screen → Customise → tap the ⊖
 bottom-corner button → tap + → search NDOL. For Control Center, swipe down from
 the top-right, long-press an empty area → Add a Control → search NDOL.</p>
 
-<h3>Is any of this sent anywhere?</h3>
-<p>No. NDOL has no network code at all — no account, no server, no analytics,
-no ads. See the <a href="privacy.html">privacy policy</a>.</p>
+<h3>My alarm didn't go off.</h3>
+<p>Alarms and reminders are delivered by iOS, not by NDOL, and iOS can delay or
+suppress them — a device that was off, out of battery, in Low Power Mode, in a
+Focus, or with notification permission turned off. Don't rely on NDOL as your
+only alarm for anything that matters. See the
+<a href="terms.html">terms of use</a>.</p>
 
-<h3>How much does it cost?</h3>
-<p>Nothing. There is no subscription, no in-app purchase and no advertising.</p>
+<h3>Is any of this sent anywhere?</h3>
+<p>No. Nothing you write leaves your device — no account, no server, no
+analytics, no ads. The only network request NDOL makes at all is to Apple's App
+Store, to ask whether your Apple Account owns the Premium unlock. See the
+<a href="privacy.html">privacy policy</a>.</p>
 
 <h2>Reporting a bug</h2>
 <p>Email <a href="mailto:bimnapps@icloud.com">bimnapps@icloud.com</a> with what

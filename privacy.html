@@ -25,13 +25,15 @@
 <main>
 
 <h1>NDOL — Privacy Policy</h1>
-<p class="sub">Last updated 7 September 2026</p>
+<p class="sub">Last updated 14 September 2026</p>
 
 <div class="card lead">
   <strong>NDOL does not collect your data. Not some of it — none of it.</strong>
-  The app has no account, no server, and no analytics, and it contains no code
-  that sends anything over a network. Everything you write stays in NDOL's
-  storage on your own device.
+  The app has no account, no server and no analytics, and nothing you write ever
+  leaves your device. Everything you write stays in NDOL's storage on your own
+  device. The only network connection NDOL makes at all is to Apple's App Store,
+  and only to check whether you have bought the optional Premium unlock —
+  described below.
 </div>
 
 <h2>What NDOL stores, and where</h2>
@@ -44,6 +46,7 @@ belongs to NDOL, shared only between the app and its own widgets:</p>
   <li>Photos, document scans and PDF pages you add to a notebook</li>
   <li>Reminders, alarms, due dates and daily tasks you create</li>
   <li>Your settings: accent colour, appearance, capture and widget preferences</li>
+  <li>A single on/off setting recording whether Premium is unlocked</li>
   <li>Up to three recent automatic backups of the above</li>
 </ul>
 <p>None of it is transmitted anywhere. There is no copy on any server operated
@@ -55,6 +58,33 @@ requires it: the app sets <code>requiresOnDeviceRecognition</code> and will
 refuse to transcribe, with an explanation, rather than fall back to sending
 your audio to a server. If your device or language cannot transcribe locally,
 dictation is unavailable instead of going online.</p>
+
+<h2>In-app purchases</h2>
+<p>NDOL is free to download. It offers <strong>one</strong> optional in-app
+purchase — <strong>NDOL Premium</strong>, a single one-time purchase, not a
+subscription — which unlocks additional features. You never have to buy it, and
+nothing you have already written is taken away if you don't.</p>
+<p><strong>The purchase is handled entirely by Apple.</strong> NDOL uses StoreKit,
+Apple's own in-app purchase system, which is part of iOS. It is not an
+advertising, analytics or third-party tracking service. When you buy or restore
+Premium:</p>
+<ul>
+  <li>Apple takes the payment under your own Apple Account. <strong>The developer
+      never receives your card details, your name, your email address or your
+      billing address</strong>, and has no way to obtain them.</li>
+  <li>The only thing NDOL records is a single on/off setting on your device
+      saying that Premium is unlocked. That setting never leaves the device.</li>
+  <li>NDOL asks Apple whether your Apple Account owns the purchase. That question
+      goes to Apple, not to the developer, and the answer comes back as yes or
+      no. Apple's handling of it is covered by
+      <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+  <li>Apple gives the developer sales and payment reports. Those are aggregate
+      and financial — units sold, revenue by region — and do not identify
+      individual buyers.</li>
+</ul>
+<p>Refunds are handled by Apple, not by the developer, at
+<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. See the
+<a href="terms.html">terms of use</a> for what Premium includes.</p>
 
 <h2>Permissions NDOL asks for</h2>
 <ul>
@@ -75,7 +105,9 @@ without any of them if you decline.</p>
   <li>Analytics, crash reporting, or usage tracking of any kind</li>
   <li>Location services</li>
   <li>Cookies or web tracking</li>
-  <li>Any third-party SDK, library, or service</li>
+  <li>Any third-party SDK, library or service. The one framework NDOL uses that
+      talks to a network at all is Apple's own StoreKit, built into iOS, and only
+      for the in-app purchase described above</li>
 </ul>
 <p>Because NDOL does not track you, it never asks for App Tracking Transparency
 permission, and it shares nothing with anyone — there is no third party to
@@ -90,7 +122,9 @@ recoverable; older ones are discarded as new ones are made.</p>
 handwriting stroke, imported image and PDF, voice recording, reminder, task,
 local backup and setting from your device in one step. It asks you to confirm
 first, and because there is no cloud copy it cannot be undone — so export
-anything you want to keep before using it.</p>
+anything you want to keep before using it. Erasing your data does not cancel a
+Premium purchase; that is held by Apple against your Apple Account and can be
+restored.</p>
 <p><strong>Deleting the NDOL app deletes everything it holds.</strong> Because
 there is no cloud copy, that is permanent and cannot be undone by the developer
 or by anyone else. If you want to keep your notes, export them first —
@@ -114,7 +148,8 @@ does not collect personal information at all.</p>
 correct, export and delete personal data a company holds about you. The
 developer of NDOL holds no personal data about you, so there is nothing to
 request. Your notes are already entirely in your possession: you can read,
-change, export and delete them yourself at any time, in the app.</p>
+change, export and delete them yourself at any time, in the app. NDOL does not
+sell or share personal information, because it has none to sell or share.</p>
 
 <h2>Changes to this policy</h2>
 <p>This policy describes what the current version of NDOL actually does. If a
