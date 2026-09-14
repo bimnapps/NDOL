@@ -25,13 +25,14 @@
 <main>
 
 <h1>NDOL — Privacy Policy</h1>
-<p class="sub">Last updated 14 September 2026</p>
+<p class="sub">Last updated 13 September 2026</p>
 
 <div class="card lead">
   <strong>NDOL does not collect your data. Not some of it — none of it.</strong>
-  The app has no account, no server and no analytics, and nothing you write ever
-  leaves your device. Everything you write stays in NDOL's storage on your own
-  device. The only network connection NDOL makes at all is to Apple's App Store,
+  The app has no account, no server and no analytics, and nothing you write is
+  ever sent to the developer. Everything you write stays in NDOL's storage on
+  your own device — the one exception, your own device backup, is described
+  below. The only network connection NDOL makes at all is to Apple's App Store,
   and only to check whether you have bought the optional Premium unlock —
   described below.
 </div>
@@ -91,7 +92,9 @@ Premium:</p>
   <li><strong>Microphone</strong> — to record a voice note. Only while you are recording.</li>
   <li><strong>Speech recognition</strong> — to turn that recording into text, on the device.</li>
   <li><strong>Camera</strong> — only when you scan a page into a notebook.</li>
-  <li><strong>Photo library</strong> — only when you add a photo to a page.</li>
+  <li><strong>Photos</strong> — NDOL uses the system photo picker, so it never
+      asks for access to your library. You choose a picture and only that
+      picture is handed to the app.</li>
   <li><strong>Notifications</strong> — to deliver reminders you set.</li>
   <li><strong>Alarms</strong> — so alarms you set can ring through Silent Mode.</li>
 </ul>
@@ -131,6 +134,28 @@ or by anyone else. If you want to keep your notes, export them first —
 Settings has a full text export, and notebooks export as PDF or as a
 restorable backup file.</p>
 
+<h2>How your notes are protected</h2>
+<p>Everything NDOL stores sits in its own container on your device, protected by
+iOS file encryption and your device passcode. NDOL adds no password of its own,
+and there is no server anywhere holding a copy — so there is nothing of yours to
+breach except the device in your hand.</p>
+<p>iOS offers several levels of file protection and NDOL does not use the same
+one for everything. Being specific about that matters more than sounding
+secure:</p>
+<ul>
+  <li><strong>Voice recordings</strong> use the strictest level — unreadable
+      while your device is locked.</li>
+  <li><strong>Automatic backups</strong> sit one level below, so that a backup
+      already being written can finish even if you lock the device mid-save.</li>
+  <li><strong>Note text, handwriting and page images</strong> stay readable once
+      you have unlocked the device at least once since it was switched on. This
+      is deliberate: it is what lets the Lock Screen and Home Screen widgets show
+      your pinned notes. If you would rather note text not be readable in that
+      state, don't add the widgets.</li>
+</ul>
+<p>If your device has no passcode set, iOS file protection does nothing — for
+NDOL or for any other app.</p>
+
 <h2>Device backups</h2>
 <p>One honest exception to "nothing leaves the device": if you use iCloud Backup
 or back your device up to a computer, NDOL's storage is included, the same as
@@ -153,12 +178,10 @@ sell or share personal information, because it has none to sell or share.</p>
 
 <h2>Changes to this policy</h2>
 <p>This policy describes what the current version of NDOL actually does. If a
-future version adds anything that changes it — sync, an account, or advertising
-— this page will be updated <em>before</em> that version is released, and the
-change will be described here rather than made quietly. Advertising in
-particular is under consideration for a later release; if it arrives, this page
-will name the ad provider and what it collects before you can install that
-version.</p>
+future version changes it — cloud sync, an account, or anything at all that
+sends your notes off your device — this page will be updated <em>before</em>
+that version is released, and the change will be described here rather than made
+quietly.</p>
 
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:bimnapps@icloud.com">bimnapps@icloud.com</a></p>
