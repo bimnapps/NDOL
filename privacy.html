@@ -25,7 +25,7 @@
 <main>
 
 <h1>NDOL — Privacy Policy</h1>
-<p class="sub">Last updated 16 September 2026</p>
+<p class="sub">Last updated 27 September 2026</p>
 
 <div class="card lead">
   <strong>NDOL does not collect your data. Not some of it — none of it.</strong>
@@ -39,14 +39,18 @@
 
 <h2>What NDOL stores, and where</h2>
 <p>All of the following is written to a private storage area on your device that
-belongs to NDOL, shared only between the app and its own widgets:</p>
+belongs to NDOL, shared only between the app, its widget and its own Control
+Center capture buttons:</p>
 <ul>
   <li>The text of your notes, and their titles, tags, folders and topics</li>
   <li>Voice recordings you make, and the text NDOL transcribes from them</li>
   <li>Handwriting and drawings in your notebooks</li>
   <li>Photos, document scans and PDF pages you add to a notebook</li>
   <li>Reminders, alarms, due dates and daily tasks you create</li>
-  <li>Your settings: accent colour, appearance, capture and widget preferences</li>
+  <li>Your settings: accent colour, appearance and capture preferences</li>
+  <li>A small file for the widgets holding only what they draw: task and
+      reminder titles, dates and which days you ticked something off. It never
+      contains the text of your notes, your handwriting, photos or recordings</li>
   <li>A single on/off setting recording whether Premium is unlocked</li>
   <li>Up to three recent automatic backups of the above</li>
 </ul>
@@ -105,7 +109,11 @@ without any of them if you decline.</p>
 <ul>
   <li>Accounts, sign-in, or any personal details — NDOL never asks who you are</li>
   <li>Advertising, ad networks, or advertising identifiers</li>
-  <li>Analytics, crash reporting, or usage tracking of any kind</li>
+  <li>Analytics, crash reporting, or usage tracking of any kind. (If you have
+      turned on <em>Share iPhone Analytics</em> with app developers in iOS
+      Settings, Apple may give the developer anonymous crash information about
+      NDOL. That comes from Apple, not from NDOL, and never contains your
+      notes.)</li>
   <li>Location services</li>
   <li>Cookies or web tracking</li>
   <li>Any third-party SDK, library or service. The one framework NDOL uses that
@@ -149,12 +157,33 @@ secure:</p>
       already being written can finish even if you lock the device mid-save.</li>
   <li><strong>Note text, handwriting and page images</strong> stay readable once
       you have unlocked the device at least once since it was switched on. This
-      is deliberate: it is what lets the Lock Screen and Home Screen widgets show
-      your pinned notes. If you would rather note text not be readable in that
-      state, don't add the widgets.</li>
+      is the standard protection iOS gives app data, and it is what lets NDOL
+      finish saving a note if you lock the device mid-write.</li>
 </ul>
 <p>If your device has no passcode set, iOS file protection does nothing — for
 NDOL or for any other app.</p>
+
+<h2>What the Lock Screen can show</h2>
+<p>The "Up Next" Lock Screen widget shows the next thing coming up, including
+its name — for example "Swim practice &middot; 6:00 AM". A Lock Screen is
+visible to anyone holding your phone, including while it is locked, so this is
+worth knowing about.</p>
+<p>You can turn it off: NDOL &rarr; Settings &rarr; Widgets &rarr;
+<strong>Show details on Lock Screen</strong>. With it off, the widget shows only
+the kind and the time, never the name. Nothing is sent anywhere either way —
+the widget reads the same on-device file everything else does.</p>
+<p><strong>Notifications show what the note says.</strong> Reminders, daily
+tasks and (before iOS 26) alarms arrive as notifications, and the notification
+text is the note's own words — that is what makes it useful. If your iPhone
+shows notification previews while locked, anyone holding it can read them. You
+control this in iOS, not in NDOL: <strong>Settings &rsaquo; Notifications
+&rsaquo; NDOL &rsaquo; Show Previews</strong>, set to <em>When Unlocked</em> or
+<em>Never</em>.</p>
+<p><strong>A ringing alarm shows its name.</strong> On iOS 26 and later, NDOL's
+alarms are real system alarms. While one rings, iOS shows the start of the
+alarm's text full-screen, on the Lock Screen too — the same as a named alarm
+in any alarm app — and the Show Previews setting does not hide it. If an
+alarm's text is private, give it a neutral wording.</p>
 
 <h2>Your notes are in iPhone search</h2>
 <p>NDOL adds your notes to your device's own search index, so that searching from
@@ -170,6 +199,20 @@ Screen, results can be visible there.</p>
 &rsaquo; NDOL</strong>, and switch off <em>Show App in Search</em> and
 <em>Show Content in Search</em>. Archived notes are never indexed, and deleting
 a note removes it from the index.</p>
+<p><strong>Siri shortcuts.</strong> NDOL offers shortcuts such as
+<em>Speak a Note</em> and <em>Type a Note</em> that you can run with Siri. iOS
+learns which shortcuts you use and when, the same as for any app. That stays
+on your device and NDOL is not told about it.</p>
+
+<h2>Sharing, exporting and copying</h2>
+<p>When you share a note, export a notebook as a PDF or text, or save a backup
+file, you choose where that copy goes — another app, AirDrop, Files, Mail,
+Messages, or a person. From that moment it is outside NDOL and outside this
+policy, and it is governed by wherever you sent it. NDOL cannot reach it or take
+it back.</p>
+<p>Tapping <em>Copy</em> puts a note's text on your device's clipboard, which any
+app you paste into can read. <strong>NDOL never reads your clipboard</strong> —
+it only ever writes to it, and only when you tap Copy.</p>
 
 <h2>Device backups</h2>
 <p>One honest exception to "nothing leaves the device": if you use iCloud Backup

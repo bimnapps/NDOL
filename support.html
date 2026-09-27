@@ -27,7 +27,7 @@
 <main>
 
 <h1>NDOL — Support</h1>
-<p class="sub">Help for the NDOL note app for iPhone and iPad · Last updated 15 September 2026</p>
+<p class="sub">Help for the NDOL note app for iPhone and iPad · Last updated 26 September 2026</p>
 
 <div class="card">
   <strong>Get in touch:</strong>
@@ -52,9 +52,9 @@ advertising in NDOL.</p>
   <tr><td>Notebooks</td><td>3 active</td><td>Unlimited</td></tr>
   <tr><td>Pages per notebook</td><td>50</td><td>Unlimited</td></tr>
   <tr><td>Timeline history</td><td>Last 30 days shown (pinned notes always shown)</td><td>Everything, however old</td></tr>
-  <tr><td>Armed alarms</td><td>5 at a time, up to 7 days ahead</td><td>Unlimited, any date</td></tr>
+  <tr><td>Armed alarms</td><td>6 at a time, any date</td><td>Unlimited</td></tr>
   <tr><td>Pending reminders</td><td>10 at a time</td><td>Unlimited</td></tr>
-  <tr><td>Unfinished tasks</td><td>10 at a time</td><td>Unlimited</td></tr>
+  <tr><td>Unfinished tasks</td><td>6 at a time</td><td>Unlimited</td></tr>
   <tr><td>Topics</td><td>3 active</td><td>Unlimited</td></tr>
   <tr><td>Accent colours</td><td>2</td><td>All 7</td></tr>
   <tr><td>Calendar marker colours</td><td>3 of 5 (alarms, reminders, daily tasks)</td><td>All 5 (adds due dates and dates)</td></tr>
@@ -65,7 +65,7 @@ advertising in NDOL.</p>
 have paid.</strong> The timeline limit <em>hides</em>: notes older than 30 days
 stay on your device, stay in search, stay in your exports and backups, and come
 straight back if you unlock Premium. The other limits are caps on how many you
-can have going at once — you can't start a fourth notebook or arm a sixth alarm
+can have going at once — you can't start a fourth notebook or arm a seventh alarm
 on the free tier, but nothing you already made is taken away, and archiving a
 finished notebook frees a slot.</p>
 
@@ -127,10 +127,20 @@ Keyboard → Dictation and make sure Dictation is on and your language is
 downloaded. On some older devices or less common languages, on-device
 transcription isn't offered by iOS at all — you can still type notes.</p>
 
+<h3>Hiding names on my Lock Screen.</h3>
+<p>The "Up Next" Lock Screen widget shows what is coming next and its name. A
+Lock Screen can be read by anyone holding the phone, so if you would rather a
+reminder's name did not appear there, open NDOL &rarr; Settings &rarr; Widgets
+and turn off <strong>Show details on Lock Screen</strong>. The widget then shows
+only the kind and the time &mdash; "Reminder &middot; 3:00 PM" &mdash; and never
+the name. The time is still shown; only names are withheld.</p>
+
 <h3>My widget is empty.</h3>
-<p>Remove the widget and add it again. If it stays empty, open NDOL → Settings
-and check for an "App Group unavailable" message, which means the app and its
-widget can't share storage. Email us if you see it.</p>
+<p>Open NDOL once — the app writes the small file the widget reads, so a widget
+added before the app has run has nothing to show yet. If it stays empty, check
+what it is set to: long-press it, choose Edit Widget, and switch between Daily
+Tasks, Reminders and Alarms. Each one only shows its own kind, so a widget set
+to Reminders is empty when nothing is coming up.</p>
 
 <h3>The Lock Screen / Control Center button.</h3>
 <p>NDOL adds two controls: one for speaking a note and one for typing. To add
@@ -141,8 +151,10 @@ the top-right, long-press an empty area → Add a Control → search NDOL.</p>
 <h3>My alarm didn't go off.</h3>
 <p>Alarms and reminders are delivered by iOS, not by NDOL, and iOS can delay or
 suppress them — a device that was off, out of battery, in Low Power Mode, in a
-Focus, or with notification permission turned off. Don't rely on NDOL as your
-only alarm for anything that matters. See the
+Focus, or with notification permission turned off. On iOS 26 and later NDOL
+uses real system alarms, which ring in Silent Mode. On iOS 18–25 alarms are
+notifications, which follow your ringer switch and Focus settings — keep the
+ringer on. Don't rely on NDOL as your only alarm for anything that matters. See the
 <a href="terms.html">terms of use</a>.</p>
 
 <h3>Is any of this sent anywhere?</h3>
