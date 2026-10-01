@@ -27,7 +27,7 @@
 <main>
 
 <h1>NDOL — Support</h1>
-<p class="sub">Help for the NDOL note app for iPhone and iPad · Last updated 26 September 2026</p>
+<p class="sub">Help for the NDOL note app for iPhone and iPad · Last updated 1 October 2026</p>
 
 <div class="card">
   <strong>Get in touch:</strong>
@@ -55,9 +55,11 @@ advertising in NDOL.</p>
   <tr><td>Armed alarms</td><td>6 at a time, any date</td><td>Unlimited</td></tr>
   <tr><td>Pending reminders</td><td>10 at a time</td><td>Unlimited</td></tr>
   <tr><td>Unfinished tasks</td><td>6 at a time</td><td>Unlimited</td></tr>
+  <tr><td>One-day tasks waiting</td><td>3 at a time</td><td>Unlimited</td></tr>
   <tr><td>Topics</td><td>3 active</td><td>Unlimited</td></tr>
   <tr><td>Accent colours</td><td>2</td><td>All 7</td></tr>
   <tr><td>Calendar marker colours</td><td>3 of 5 (alarms, reminders, daily tasks)</td><td>All 5 (adds due dates and dates)</td></tr>
+  <tr><td>Snooze, and the 5/10/15/30-minute snooze length</td><td>Included</td><td>Included</td></tr>
   <tr><td>PDF export, text export, notebook backup</td><td>Included</td><td>Included</td></tr>
   <tr><td>Voice capture, handwriting, widgets, Control Center capture, automatic backups</td><td>Included</td><td>Included</td></tr>
 </table>
@@ -68,6 +70,14 @@ straight back if you unlock Premium. The other limits are caps on how many you
 can have going at once — you can't start a fourth notebook or arm a seventh alarm
 on the free tier, but nothing you already made is taken away, and archiving a
 finished notebook frees a slot.</p>
+<p><strong>A one-day task counts on its own, not against the six.</strong> A task
+you put on a particular day — Today, Tomorrow or a date you pick — comes out of
+its own allowance of three on the free tier, so adding one never uses up room for
+an ordinary task, and the other way round.</p>
+<p><strong>Snooze is free, at every tier, deliberately.</strong> A limit that
+could stop you postponing an alarm that is ringing right now would be a phone
+that rings until it is paid for, so there isn't one. Both the button and the
+choice of 5, 10, 15 or 30 minutes in Settings are part of the free app.</p>
 
 <h3>I already bought Premium — how do I get it on a new device?</h3>
 <p>Sign in to the same Apple Account, then open NDOL → <strong>Settings →
@@ -106,6 +116,14 @@ sync, so notes do not appear on a second device on their own. To move them:
 Settings → Export all notes writes a text file of everything, and a notebook can
 be exported as a PDF or as a backup file you can open on another device.</p>
 
+<h3>Can I see my iPad notebooks on my iPhone?</h3>
+<p>Yes, to read. Notebooks are written on iPad. To bring one to your iPhone, on
+the iPad open the notebook's menu → <strong>Back up notebook</strong>, then AirDrop
+the file to your iPhone or save it to Files and open it there. NDOL asks whether
+to add it. On iPhone it appears under <strong>Home → Notebooks</strong>, where you
+can read every page and zoom in, but not write. It is a copy: changes you make
+on the iPad later do not reach the iPhone until you send it again.</p>
+
 <h3>How do I make sure I don't lose my notes?</h3>
 <p>NDOL keeps three recent automatic backups on the device, and you can restore
 from any of them in Settings → Restore from backup. That protects against a
@@ -130,17 +148,42 @@ transcription isn't offered by iOS at all — you can still type notes.</p>
 <h3>Hiding names on my Lock Screen.</h3>
 <p>The "Up Next" Lock Screen widget shows what is coming next and its name. A
 Lock Screen can be read by anyone holding the phone, so if you would rather a
-reminder's name did not appear there, open NDOL &rarr; Settings &rarr; Widgets
+reminder's name did not appear there, open NDOL &rarr; Settings &rarr; Lock Screen
 and turn off <strong>Show details on Lock Screen</strong>. The widget then shows
 only the kind and the time &mdash; "Reminder &middot; 3:00 PM" &mdash; and never
-the name. The time is still shown; only names are withheld.</p>
+the name. The time is still shown; only names are withheld. The same switch
+makes ringing alarms say only "Alarm" and notifications say only what they are,
+on the Lock Screen and in banners alike.</p>
 
 <h3>My widget is empty.</h3>
 <p>Open NDOL once — the app writes the small file the widget reads, so a widget
 added before the app has run has nothing to show yet. If it stays empty, check
-what it is set to: long-press it, choose Edit Widget, and switch between Daily
-Tasks, Reminders and Alarms. Each one only shows its own kind, so a widget set
-to Reminders is empty when nothing is coming up.</p>
+what it is set to: long-press it, choose Edit Widget, and switch between Tasks,
+Reminders and Alarms. Tasks shows what you have to do today — both the tasks you
+put on a date and your repeating daily list — while Reminders and Alarms show only
+their own kind, so a widget set to Reminders is empty when nothing is coming
+up.</p>
+
+<h3>Finished daily tasks disappear after a few days. Is that a bug?</h3>
+<p>No — it is deliberate, and it is the one place NDOL deletes something for you.
+When you tick a repeating daily task off, it stays on today's list until midnight,
+then moves to <strong>Finished</strong> (the clock button on the Tasks screen). It
+stays there for three days and is then <strong>permanently deleted</strong>. It is
+not hidden and it is not recoverable.</p>
+<p>That is why a task's "days in a row" figure and its row of dots only go back a
+few days: there is no older history to draw on. Everything else in NDOL works the
+other way round — notes, one-day tasks and notebooks are never deleted to enforce
+anything, and a note you archive or a task you stop repeating keeps all of its
+contents. Finished daily tasks are the exception, on purpose, so the morning list
+starts clean.</p>
+
+<h3>Why can't I tick a dated task off on the widget?</h3>
+<p>Your repeating daily tasks have a circle you can tap on the widget itself. A
+task you put on a particular day does not — tap it and NDOL opens at that task,
+where you can tick it. The reason is technical and worth knowing: the widget reads
+a tiny summary file rather than your notes, which is what keeps it fast and what
+stops it running out of memory on a phone. Ticking a dated task means writing to
+your notes, and the widget is deliberately not allowed to touch them.</p>
 
 <h3>The Lock Screen / Control Center button.</h3>
 <p>NDOL adds two controls: one for speaking a note and one for typing. To add
@@ -154,7 +197,14 @@ suppress them — a device that was off, out of battery, in Low Power Mode, in a
 Focus, or with notification permission turned off. On iOS 26 and later NDOL
 uses real system alarms, which ring in Silent Mode. On iOS 18–25 alarms are
 notifications, which follow your ringer switch and Focus settings — keep the
-ringer on. Don't rely on NDOL as your only alarm for anything that matters. See the
+ringer on. Wherever alarms arrive as notifications (iOS 18–25, or iOS 26 with
+alarm permission off), iOS holds a limited number per app: there is room for
+about 32 repeating alarm and daily-task times at once (an everyday alarm is one,
+a weekday alarm one per day). Any beyond that are kept, marked as waiting on the
+Alarms or Tasks screen, and brought in soonest first each time you open NDOL —
+until then they do not ring. On iOS 26 with alarm permission on, your 32 soonest
+alarms ring as full-screen system alarms and any beyond arrive as
+notifications. Don't rely on NDOL as your only alarm for anything that matters. See the
 <a href="terms.html">terms of use</a>.</p>
 
 <h3>Is any of this sent anywhere?</h3>

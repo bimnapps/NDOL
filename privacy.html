@@ -25,7 +25,7 @@
 <main>
 
 <h1>NDOL — Privacy Policy</h1>
-<p class="sub">Last updated 27 September 2026</p>
+<p class="sub">Last updated 1 October 2026</p>
 
 <div class="card lead">
   <strong>NDOL does not collect your data. Not some of it — none of it.</strong>
@@ -48,9 +48,10 @@ Center capture buttons:</p>
   <li>Photos, document scans and PDF pages you add to a notebook</li>
   <li>Reminders, alarms, due dates and daily tasks you create</li>
   <li>Your settings: accent colour, appearance and capture preferences</li>
-  <li>A small file for the widgets holding only what they draw: task and
-      reminder titles, dates and which days you ticked something off. It never
-      contains the text of your notes, your handwriting, photos or recordings</li>
+  <li>A small file for the widgets holding only what they draw: a short title
+      for each task, reminder and alarm (for a note, its title or first line),
+      dates, and which days you ticked something off. It never contains the rest
+      of a note's text, your handwriting, photos or recordings</li>
   <li>A single on/off setting recording whether Premium is unlocked</li>
   <li>Up to three recent automatic backups of the above</li>
 </ul>
@@ -100,7 +101,9 @@ Premium:</p>
       asks for access to your library. You choose a picture and only that
       picture is handed to the app.</li>
   <li><strong>Notifications</strong> — to deliver reminders you set.</li>
-  <li><strong>Alarms</strong> — so alarms you set can ring through Silent Mode.</li>
+  <li><strong>Alarms</strong> (iOS 26 and later) — so alarms you set can ring
+      through Silent Mode. On earlier versions of iOS this permission does not
+      exist and alarms arrive as notifications.</li>
 </ul>
 <p>Each is requested at the moment you first use the feature, and NDOL works
 without any of them if you decline.</p>
@@ -115,7 +118,9 @@ without any of them if you decline.</p>
       NDOL. That comes from Apple, not from NDOL, and never contains your
       notes.)</li>
   <li>Location services</li>
-  <li>Cookies or web tracking</li>
+  <li>Cookies or web tracking. Because NDOL does not track you on its own or
+      across other apps and websites, it has nothing to change in response to a
+      browser's Do Not Track signal</li>
   <li>Any third-party SDK, library or service. The one framework NDOL uses that
       talks to a network at all is Apple's own StoreKit, built into iOS, and only
       for the in-app purchase described above</li>
@@ -128,6 +133,11 @@ share it with.</p>
 <p>Your notes stay until you delete them. Deleting a note also deletes its voice
 recording. NDOL keeps up to three recent automatic backups so a bad day is
 recoverable; older ones are discarded as new ones are made.</p>
+<p><strong>One thing NDOL deletes on its own:</strong> when you tick off a
+repeating daily task, that record of having done it is kept for three days and is
+then permanently deleted, so the list you see each morning is the work still ahead
+of you. Nothing else is removed for you — your notes, your notebooks and your
+dated tasks stay until you delete them yourself.</p>
 <p><strong>You can erase everything at once.</strong> Settings has an
 <em>Erase all data</em> option that removes every note, notebook, page,
 handwriting stroke, imported image and PDF, voice recording, reminder, task,
@@ -168,22 +178,32 @@ NDOL or for any other app.</p>
 its name — for example "Swim practice &middot; 6:00 AM". A Lock Screen is
 visible to anyone holding your phone, including while it is locked, so this is
 worth knowing about.</p>
-<p>You can turn it off: NDOL &rarr; Settings &rarr; Widgets &rarr;
+<p>You can turn it off: NDOL &rarr; Settings &rarr; Lock Screen &rarr;
 <strong>Show details on Lock Screen</strong>. With it off, the widget shows only
-the kind and the time, never the name. Nothing is sent anywhere either way —
-the widget reads the same on-device file everything else does.</p>
-<p><strong>Notifications show what the note says.</strong> Reminders, daily
-tasks and (before iOS 26) alarms arrive as notifications, and the notification
-text is the note's own words — that is what makes it useful. If your iPhone
-shows notification previews while locked, anyone holding it can read them. You
-control this in iOS, not in NDOL: <strong>Settings &rsaquo; Notifications
-&rsaquo; NDOL &rsaquo; Show Previews</strong>, set to <em>When Unlocked</em> or
+the kind and the time, never the name — and the same switch covers ringing
+alarms and notifications (below). Nothing is sent anywhere either way — the
+widget reads the same on-device file everything else does.</p>
+<p><strong>Notifications show what the note says, unless you turn that
+off.</strong> Reminders, daily tasks and (before iOS 26) alarms arrive as
+notifications, and by default the notification text is the note's own words —
+that is what makes it useful. With <strong>Show details on Lock Screen</strong>
+off, they say only what they are ("Alarm", "Reminder", "Due today", "Daily
+task") and never the note's words. NDOL cannot tell whether your phone is
+locked, so this applies to banners while it is unlocked too. Notifications
+already delivered before you turn it off keep their words until you clear
+them. If you would
+rather keep the words when unlocked and hide them only when locked, leave the
+switch on and use iOS instead: <strong>Settings &rsaquo; Notifications &rsaquo;
+NDOL &rsaquo; Show Previews</strong>, set to <em>When Unlocked</em> or
 <em>Never</em>.</p>
-<p><strong>A ringing alarm shows its name.</strong> On iOS 26 and later, NDOL's
-alarms are real system alarms. While one rings, iOS shows the start of the
-alarm's text full-screen, on the Lock Screen too — the same as a named alarm
-in any alarm app — and the Show Previews setting does not hide it. If an
-alarm's text is private, give it a neutral wording.</p>
+<p><strong>A ringing alarm shows its name, unless you turn that off.</strong>
+On iOS 26 and later, NDOL's alarms are real system alarms. While one rings, iOS
+shows the start of the alarm's text full-screen, on the Lock Screen too — the
+same as a named alarm in any alarm app — and iOS's Show Previews setting does
+not hide it. With <strong>Show details on Lock Screen</strong> off, a ringing
+alarm says only "Alarm" (or "Daily task"). Turning the switch on or off updates
+alarms you have already set, except one that is ringing or snoozing at that
+moment, which updates the next time you open NDOL.</p>
 
 <h2>Your notes are in iPhone search</h2>
 <p>NDOL adds your notes to your device's own search index, so that searching from
@@ -204,7 +224,10 @@ a note removes it from the index.</p>
 learns which shortcuts you use and when, the same as for any app. That stays
 on your device and NDOL is not told about it.</p>
 
-<h2>Sharing, exporting and copying</h2>
+<h2>Links, sharing, exporting and copying</h2>
+<p>Tapping a link — to this policy, the terms or the support page, or a web
+address inside your own note — opens it in your browser, outside NDOL. NDOL
+itself does not load the page or send anything with it.</p>
 <p>When you share a note, export a notebook as a PDF or text, or save a backup
 file, you choose where that copy goes — another app, AirDrop, Files, Mail,
 Messages, or a person. From that moment it is outside NDOL and outside this
